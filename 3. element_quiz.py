@@ -1,5 +1,3 @@
-# !curl https://raw.githubusercontent.com/MicrosoftLearning/intropython/master/elements1_20.txt -o elements1_20.txt
-
 def get_names():
     elements_list = []
 
