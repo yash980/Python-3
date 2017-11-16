@@ -1,3 +1,4 @@
+#Write a method to find 2nd maximum number in a single traversal.
 numbers = []                            # Declare an empty list
 maximum, second_max, a, b = 0, 0, 0, 0  # Initialisation of variables
 
