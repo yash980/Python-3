@@ -5,21 +5,21 @@ symbols = ['!','@','#','$','%','&','_']
 password = []
 
 
-file1 = open("raw_text.txt", 'r')
+my_file = open("raw_text.txt", 'r')
 
-a = file1.readlines()
-file1.close()
+read_file = my_file.readlines()
+my_file.close()
 
-b = a[random.randint(0,466543)]
+single_word = read_file[random.randint(0,466543)]
 
-c = b.strip("\n")
+cleaned_word = single_word.strip("\n")
 
 rules = re.compile("\w+")
-d = rules.findall(c.title())
+final_word = rules.findall(cleaned_word.title())
 
 password.append(str(random.randint(0,99)))
 password.append(symbols[random.randint(0,6)])
-password.append("".join(d))
+password.append("".join(final_word))
 password.append(str(random.randint(0,999)))
 
 
