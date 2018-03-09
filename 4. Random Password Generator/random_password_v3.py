@@ -24,7 +24,7 @@ password.append(str(random.randint(0,999)))
 
 
 
-print("\n\n\nYour Password is: ", "".join(password))
+print("\n\n\nYour Password is: ", "".join(set(password)))         # A suggestion in an interview to shuffle order of password.
 print("\r")
 print("If you didn't like the Password, Please Generate it again! ;-)\n\n\n")
 
